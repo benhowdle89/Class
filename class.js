@@ -20,11 +20,16 @@
     }
 
     Class.prototype.extend = function(params) {
-        for (var x in params) {
-            this[x] = params[x];
-        }
         var fn = function() {};
-        fn.prototype = this;
+        var newProto = {};
+        for(var p in this) {
+          newProto[p] = this[p];
+        }
+        for(var x in params) {
+          newProto[x] = params[x];
+        }
+
+        fn.prototype = newProto;
         return fn;
     };
     
