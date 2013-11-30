@@ -14,7 +14,7 @@
 }(this, function() {
 
     function Class() {
-        if (this === root) {
+        if (this === ((typeof root !== 'undefined') ? root : window)) {
             return new Class();
         }
     }
