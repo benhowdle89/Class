@@ -1,0 +1,21 @@
+{
+  "name": "node-classjs",
+  "version": "0.0.1",
+  "description": "Simple, elegant inheritance for your JavaScript",
+  "main": "class.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benhowdle89/Class.git"
+  },
+  "keywords": [
+    "inheritance",
+    "class",
+    "prototype"
+  ],
+  "author": "Ben Howdle",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}

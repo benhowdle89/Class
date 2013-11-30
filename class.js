@@ -14,7 +14,7 @@
 }(this, function() {
 
     function Class() {
-        if (this === window) {
+        if (this === root) {
             return new Class();
         }
     }
